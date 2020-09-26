@@ -1,11 +1,11 @@
 ---
 title: Basic Mathematics
 tags: Jacobian
-articles:
-  # data_source: site.sample_page
-  type: brief
-  show_readmore: true
-  show_info: true
+# articles:
+#   # data_source: site.sample_page
+#   type: brief
+#   show_readmore: true
+#   show_info: true
 article_header:
   type: cover
   image:
