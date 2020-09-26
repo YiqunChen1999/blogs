@@ -1,10 +1,11 @@
 ---
 title: Basic Mathematics
-# tags: TeXt
-# article_header:
-#   type: cover
-#   image:
-#     src: /Images/Mathematics/IMG_1027.png
+tags: TeXt
+article_header:
+  type: cover
+  image:
+    # src: /raw/master/Images/Mathematics/IMG_1027.PNG
+    src: /Images/Mathematics/IMG_1027.PNG
 ---
 
 ## Basic Fomula
