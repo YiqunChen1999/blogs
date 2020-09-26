@@ -9,7 +9,7 @@ title: Basic Mathematics
 
 ## Basic Fomula
 
-![Hi](/Images/Mathematics/IMG_1027.png)
+![Hi](https://github.com/YiqunChen1999/Blogs/Images/Mathematics/IMG_1027.png)
 
 Given a mapping: $f: R^N \rightarrow R^M$ and input X with dimension N, output with dimension M,
 we we call the matrix with following form a Jocobian Matrix:
