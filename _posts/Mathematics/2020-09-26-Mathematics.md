@@ -3,7 +3,7 @@ title: Basic Mathematics
 tags: Jacobian
 articles:
 #   data_source: site.sample_page
-#   type: brief
+  type: brief
   shou_readmore: true
   show_info: true
   show_excerpt: false
