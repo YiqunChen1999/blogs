@@ -1,16 +1,15 @@
 ---
 title: Basic Mathematics
-tags: TeXt
+tags: Jacobian
 article_header:
   type: cover
   image:
-    # src: /raw/master/Images/Mathematics/IMG_1027.PNG
     src: /Images/Mathematics/IMG_1027.PNG
 ---
 
 ## Basic Fomula
 
-![Hi](https://github.com/YiqunChen1999/Blogs/raw/master/Images/Mathematics/IMG_1027.PNG)
+<!-- ![Hi](https://github.com/YiqunChen1999/Blogs/raw/master/Images/Mathematics/IMG_1027.PNG) -->
 
 Given a mapping: $f: R^N \rightarrow R^M$ and input X with dimension N, output with dimension M,
 we we call the matrix with following form a Jocobian Matrix:
