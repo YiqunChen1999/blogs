@@ -16,6 +16,7 @@ article_header:
 ## Before Start
 
 This is just a test post! :ghost: :ghost: :ghost:
+<!--more-->
 
 ## Basic Fomula
 

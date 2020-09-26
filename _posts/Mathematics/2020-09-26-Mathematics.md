@@ -16,7 +16,7 @@ article_header:
 ## Before Start
 
 This is just a test post! :ghost: :ghost: :ghost:
-
+<!--more-->
 ## Basic Fomula
 
 <!-- ![Hi](https://github.com/YiqunChen1999/Blogs/raw/master/Images/Mathematics/IMG_1027.PNG) -->
