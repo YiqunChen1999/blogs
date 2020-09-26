@@ -7,6 +7,10 @@ article_header:
     src: /Images/Mathematics/IMG_1027.PNG
 ---
 
+## Before Start
+
+This is just a test post! :ghost: :ghost: :ghost:
+
 ## Basic Fomula
 
 <!-- ![Hi](https://github.com/YiqunChen1999/Blogs/raw/master/Images/Mathematics/IMG_1027.PNG) -->
