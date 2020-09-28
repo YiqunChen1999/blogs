@@ -1,10 +1,10 @@
 ---
-title: Basic Mathematics
-tags: Jacobian
+title: Test My Blog
+tags: test
 articles:
-  # data_source: site.sample_page
+#   data_source: site.sample_page
   type: brief
-  shou_readmore: false
+  shou_readmore: true
   show_info: true
   show_excerpt: false
 article_header:
@@ -17,7 +17,6 @@ article_header:
 
 This is just a test post! :ghost: :ghost: :ghost:
 <!--more-->
-
 ## Basic Fomula
 
 <!-- ![Hi](https://github.com/YiqunChen1999/Blogs/raw/master/Images/Mathematics/IMG_1027.PNG) -->

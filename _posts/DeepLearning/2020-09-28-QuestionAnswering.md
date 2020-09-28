@@ -1,6 +1,6 @@
 ---
 title: 深度学习基本知识点
-tags: Deep Learning
+tags: DeepLearning
 articles:
   # data_source: site.sample_page
   type: brief
