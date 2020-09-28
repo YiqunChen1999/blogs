@@ -32,7 +32,7 @@ article_header:
 
 3. 试问 Atours Convolution 的优点。
 
-    - 答：Atrous Convolution 可以在保持卷积参数不变、不增加中间变脸的情况下增大卷积核的感受野，
+    - 答：Atrous Convolution 可以在保持卷积参数不变、不增加中间变量的情况下增大卷积核的感受野，
     有利于提高计算效率。
 
 4. 试举例缓解类别不平衡问题。
