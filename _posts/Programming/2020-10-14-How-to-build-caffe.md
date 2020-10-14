@@ -63,19 +63,19 @@ cuDNN 是一个加速软件包，可以按照[官方文档](https://docs.nvidia.
 
 `cat path_to_cudnn_header_file | grep CUDNN_MAJOR -A 2`
 
-### ATLAS(required)
+### ATLAS
 
 安装 ATLAS, 可以直接搜索如何安装，也可以参考以下命令：
 
 `sudo apt-get install libatlas-base-dev liblapack-dev libblas-dev`
 
-### OpenBlas(required)
+### OpenBlas
 
 我在最后一步 `make runtest` 的时候因为没有安装这个包报过错，因此这里我也把这个包当作依赖装上：
 
 `sudo apt-get install libopenblas-dev`
 
-### BOOST>=1.55(required)
+### BOOST>=1.55
 
 同样可以搜索如何安装，也可以先用 `apt search boost` 查找相应的软件包，以下命令可供参考：
 
@@ -141,7 +141,7 @@ cuDNN 是一个加速软件包，可以按照[官方文档](https://docs.nvidia.
 
 `sudo apt-get install libhdf5-serial-dev`
 
-修改文件名：
+创建软链接：
 
 `sudo ln -s /usr/lib/x86_64-linux-gnu/libhdf5_serial.so.100 /usr/lib/x86_64-linux-gnu/libhdf5.so`
 
@@ -241,3 +241,38 @@ cuDNN 是一个加速软件包，可以按照[官方文档](https://docs.nvidia.
 `make test`
 
 `make runtest`
+
+### 暂未解决的问题
+
+已经成功执行以下命令：
+
+`make all`
+
+`make test`
+
+然而执行 `make runtest` 时，遇到以下错误
+
+```
+F1015 09:25:16.522922 29408 math_functions.cu:62] Check failed: status == CUBLAS_STATUS_SUCCESS (13 vs. 0)  CUBLAS_STATUS_EXECUTION_FAILED
+*** Check failure stack trace: ***
+    @     0x7fe66e3fd0cd  google::LogMessage::Fail()
+    @     0x7fe66e3fef33  google::LogMessage::SendToLog()
+    @     0x7fe66e3fcc28  google::LogMessage::Flush()
+    @     0x7fe66e3ff999  google::LogMessageFatal::~LogMessageFatal()
+    @     0x7fe66bf4dcf2  caffe::caffe_gpu_gemv<>()
+    @     0x7fe66bf15447  caffe::ContrastiveLossLayer<>::Forward_gpu()
+    @     0x55d75dd8ed68  caffe::Layer<>::Forward()
+    @     0x55d75ddb67b1  caffe::GradientChecker<>::CheckGradientSingle()
+    @     0x55d75ddb73e3  caffe::GradientChecker<>::CheckGradientExhaustive()
+    @     0x55d75de1ffd1  caffe::ContrastiveLossLayerTest_TestGradient_Test<>::TestBody()
+    @     0x55d75e1dd1b4  testing::internal::HandleExceptionsInMethodIfSupported<>()
+    @     0x55d75e1d67ba  testing::Test::Run()
+    @     0x55d75e1d6908  testing::TestInfo::Run()
+    @     0x55d75e1d69e5  testing::TestCase::Run()
+    @     0x55d75e1d6ca7  testing::internal::UnitTestImpl::RunAllTests()
+    @     0x55d75e1d6fb3  testing::UnitTest::Run()
+    @     0x55d75dd8093d  main
+    @     0x7fe66b275b97  __libc_start_main
+    @     0x55d75dd8840a  _start
+make: *** [Makefile:544: runtest] Aborted (core dumped)
+```
