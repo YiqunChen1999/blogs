@@ -1,6 +1,6 @@
 ---
-title: 深度学习基本知识点
-tags: DeepLearning
+title: 如何编译 caffe 源码
+tags: Programming
 articles:
   # data_source: site.sample_page
   type: brief
@@ -17,6 +17,8 @@ article_header:
 # 如何在 Ubuntu 18.04LTS 上安装 caffe
 
 **⚠ 警告：编译 caffe 十分麻烦，依赖报错无穷无尽，所以文章比较长，看来又有人要接受 caffe 的毒打了**
+
+**由于我尚未成功解决跟显卡驱动相关的问题，因此暂时没有和 CUDA 相关的详细步骤，如果有成功编译 GPU 版本的小伙伴，欢迎交流**
 
 ## 检查依赖
 
