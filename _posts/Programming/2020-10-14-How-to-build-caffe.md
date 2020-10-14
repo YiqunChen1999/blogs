@@ -24,6 +24,22 @@ article_header:
 
 依赖部分主要靠阅读官方源码编译部分的[依赖部分文档](https://caffe.berkeleyvision.org/installation.html)以及编译所需的 Makefile.config, 以下为检查并安装依赖的过程。
 
+### 安装特定版本的 gcc & g++
+
+`sudo apt install build-essential`
+
+`sudo apt install gcc-6 g++-6`
+
+修改 gcc 和 g++ 的软连接：
+
+`sudo rm /usr/bin/gcc`
+
+`sudo rm /usr/bin/g++`
+
+`sudo ln -s /usr/bin/gcc-6 /usr/bin/gcc`
+
+`sudo ln -s /usr/bin/g++-6 /usr/bib/g++`
+
 ### CUDA(optional)
 
 想要运行 GPU 版本的 caffe 需要安装CUDA, 推荐的 CUDA 版本为 CUDA7+, 当然 CUDA6.x 也可以。首先检查 CUDA 版本：
@@ -148,22 +164,6 @@ cuDNN 是一个加速软件包，可以按照[官方文档](https://docs.nvidia.
 ### 安装 libsnappy
 
 `sudo apt-get install libsnappy-dev`
-
-### 安装特定版本的 gcc & g++
-
-`sudo apt install build-essential`
-
-`sudo apt install gcc-6 g++-6`
-
-修改 gcc 和 g++ 的软连接：
-
-`sudo rm /usr/bin/gcc`
-
-`sudo rm /usr/bin/g++`
-
-`sudo ln -s /usr/bin/gcc-6 /usr/bin/gcc`
-
-`sudo ln -s /usr/bin/g++-6 /usr/bib/g++`
 
 ## 修改编译文件 Makefile
 
