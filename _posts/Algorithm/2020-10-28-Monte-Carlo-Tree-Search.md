@@ -24,7 +24,7 @@ article_header:
 
 我们考虑简单的井字棋，我们希望能够在井字棋的博弈游戏中用上蒙特卡罗树搜索方法，我们已经知道该方法是基于树搜索的一种方法，那么我们需要构建一棵搜索树。我们以游戏的当前状态（例如：井字棋中，以棋盘作为当前状态）构建搜索树的节点，该节点的子节点便是基于当前状态，某位玩家采取某一行动能够到达的（所有）可能状态所确定的（所有）节点，如 [图1](#TicTacToeGameTree)。
 
-![TicTacToeGameTree](../../Images/Algorithm/MonteCarloTreeSearch/TicTacToeGameTree.png)
+![TicTacToeGameTree](/Images/Algorithm/MonteCarloTreeSearch/TicTacToeGameTree.png)
 
 <center><a name="TicTacToeGameTree"></a> 图1 井字棋的搜索树</center>
 
@@ -57,7 +57,7 @@ $UCT(v, v_i) = \frac{Q(v_i)}{N(v_i)}+c\sqrt{\frac{log(N(v))}{N(v_i)}}$
 
 该式包含两个部分，第一部分衡量根据当前统计数据判断出来的子节点 $v_i$ 的优秀程度，但是我们不能仅靠第一项就作出决定，因为如果探索时，该节点不幸有某一些子节点节点正好都得到了以败作为结尾的模拟结果，此时仅采取第一项这种贪婪策略并不明智，因为这会导致一开始就探索到不好的结果的节点失去了后续被探索的可能性，而这些节点有可能提供更好的结果，因此引入了第二项，这一项实际上是探索项，它更偏重于探索次数少的节点，而探索次数多的节点由于其统计数据已经被比较全面地收集了，其探索的可能性便交由第一项确定。
 
-![UCTExploration](../../Images/Algorithm/MonteCarloTreeSearch/exploration-uct.png)
+![UCTExploration](/Images/Algorithm/MonteCarloTreeSearch/exploration-uct.png)
 
 <center><a name="UCTExploration">图2 UCT 探索项曲线</a></center>
 
