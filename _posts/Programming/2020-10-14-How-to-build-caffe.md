@@ -183,6 +183,14 @@ cuDNN 是一个加速软件包，可以按照[官方文档](https://docs.nvidia.
 
 `LINKFLAGS += -pthread -I/usr/local/include -L/usr/local/lib -lprotobuf -pthread -lpthread`
 
+在约 184 行处找到
+
+`LIBRARIES += glog gflags protobuf boost_system boost_filesystem m`
+
+并在其后添加
+
+`hdf5_serial_hl hdf5_serial`
+
 ## 修改配置文件
 
 复制配置文件：
