@@ -28,5 +28,5 @@ key: page-about
 
 # About
 
-Currently I am a graduate student of Institution of Automation, Chinese Academy of Science, for more information, please refer to my 
+Currently I am a graduate student of Institution of Automation, Chinese Academy of Sciences, for more information, please refer to my 
 ![CV](https://yiqunchen1999.github.io/). I will update my information soon.
